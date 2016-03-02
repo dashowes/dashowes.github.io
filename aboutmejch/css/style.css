@@ -1,0 +1,88 @@
+body {
+	background: #b9c5d1;
+}
+
+.holder {
+	display: inline-block;
+	padding: .25em;
+	margin: .125em .25em 0em .25em;
+	background: #747474;
+}
+
+.content {
+	background: #fca311;
+	opacity: .55;
+	margin: .25em .125em .125em .125em;
+	float: left;
+	width: 25em;
+	height: 12em;
+}
+
+.work {
+	font-size: .66em;
+}
+
+.edu {
+	font-size: 1em;
+}
+
+.music {
+	font-size: .85em;
+}
+
+.bigimg {
+	float: left;
+	margin: .25em .125em .125em .125em;	
+	width: 25em;
+	opacity: .55;
+}
+
+h1 {
+	font-family: Impact;
+	font-size: 3em;
+	background: #fca311;
+	color: #ffffff;
+	opacity: .75;
+	padding: .25em;
+	margin: 0em;
+}
+
+h2 {
+	font-family: Gill Sans;
+	font-size: 1.5em;
+	background: #000000;
+	color: #e5e5e5;
+	opacity: .65;
+	margin: 0em;
+}
+
+h3 {
+	font-family: Gill Sans;
+	font-size: 1.125em;
+	background: #14213d;
+	color: #e5e5e5;
+	margin: 0em;
+	padding: .25em;
+}
+
+p, ul, ol {
+	font-family: Century Gothic;
+	font-size: .85em;
+	margin: 0em;
+	padding: .5em;
+	text-decoration: none;
+	vertical-align: center;
+}
+
+li {
+	margin-left: 1.25em;
+	padding: .25em;
+	text-decoration: none;
+	vertical-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+
