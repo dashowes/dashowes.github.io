@@ -1,0 +1,169 @@
+/* ==========================================================================
+   Global Overrides
+  ========================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+body {
+  color: #3a3a3b;
+  font-size: 20px;
+}
+
+header {
+  background-color: #3a3a3b;
+  padding: 5px;
+  width: 100%;
+  position: absolute;
+  border-bottom: 5px solid #f9d634;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav {
+  float: right;
+}
+
+ul {
+float: left;
+}
+
+li {
+  text-decoration: none;
+  padding: 5px;
+}
+
+.bold {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  float: left;
+  text-transform: uppercase;
+}
+
+.reggie {
+  font-family: 'Source Sans Pro', sans-serif;
+  float: right;
+}
+
+
+h1 {
+  font-family: 'Merriweather', serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 30px;
+  float: left;
+}
+
+.tagline {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+  background-color: #d6e1dc;
+  width: 100%;
+  box-shadow: 0px 0px 3px 0px #3a3a3b;
+  position: relative;
+  top: 100px;
+}
+
+.banner {
+  background-image: url(images/coworking.jpg);
+  position: relative;
+  top: 100px;
+  background-repeat: no-repeat;
+  z-index: .5;
+}
+
+.blurb {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  left: 750px;
+  z-index: 1;
+  opacity: .5;
+  box-shadow: 2px 2px 2px 2px #3a3a3b;
+  clear: both;
+  padding: 10px;
+}
+
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  opacity: 1;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  opacity: 1;
+}
+
+.btmmenu {
+  background-color: #ffffff;
+  width: 100%;
+  display: block;
+  position: relative;
+  top: 135px;
+  clear: both;
+  border-top: 1px solid #3a3a3b;
+}
+
+.info {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #d6e1dc;
+}
+
+.button {
+  background-color: #d6e1dc;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px;
+  width: 75px;
+  border-radius: 5px;
+  box-shadow: 2px #3a3a3b;
+  opacity: 1;
+}
+
+  .buttonholder {
+    text-align: center;
+  }
+
+#createprof {
+  background-color: #e6403d;
+  color: #ffffff;
+}
+
+h3 {
+  font-family: 'Merriweather', serif;
+  color: #3a3a3b;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+footer {
+  background-color: #3a3a3b;
+  color: #ffffff;
+  padding: 5px;
+  position: relative;
+  top: 150px;
+  width: 100%;
+}
+   ================================================================ */
