@@ -13,8 +13,8 @@ function makeNewEntry() {
 	$('#newEntry').val('');
 };
 
-function convertToCurrency(newEntry) {
-	var currency = parseFloat(newEntry);
+function convertToCurrency(number) {
+	var currency = parseFloat(number);
 	currency = currency.toFixed(2);
 	currency = '$' + currency;
 	return currency;
