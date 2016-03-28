@@ -95,20 +95,142 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* HOME VIEW */
+
+.page {
+
+}
+
+.homecontainer {
+
+}
+.mainlogo {
+
+}
+.imgbig {
+
+}
+
+.btncontainer {
+
+}
+.loginbtn {
+
+}
+.signupbtn {
+
+}
 
 
+/* LOGIN MENU DROPS DOWN ON CLICK OF .loginbtn */
+
+.logincontainer {
+
+}
+.login {
+
+}
+#login-pwd {
+
+}
+.submitbtn {
+
+}
 
 
+/* USER TYPE MENU DROPS DOWN ON CLICK OF .signupbtn */
+
+.user-type-container {
+
+}
+.usertypebtn {
+
+}
+#musician {
+
+}
+#band {
+
+}
 
 
+/* MUSICIAN SIGNUP FORM DROPS DOWN ON CLICK OF #musician */
+
+.musiciancontainer {
+
+}
+
+.user-column-container {
+
+}
+.column1 {
+
+}
+.signuptextsm {
+
+}
+.dropdown {
+
+}
+
+.column2 {
+
+}
 
 
+/* BAND SIGNUP FORM DROPS DOWN ON CLICK OF #band */
+
+.bandcontainer {
+
+}
 
 
+/* WIDER CONTAINER OF LARGER TEXT FIELDS DROPS DOWN ON CLICK OF ANY .usertypebtn */
+
+.signup-bottom-container {
+
+}
+.signuptextlg {
+
+}
+.signuptextmed {
+
+}
+#signup-pwd {
+
+}
+#signup-pwd-conf {
+
+}
 
 
+/* BROWSE VIEW */
 
+.browsecontainer {
 
+}
+.browse-column1 {
+
+}
+.infosmall1 {
+
+}
+.infosmall2 {
+
+}
+
+.browse-column2 {
+
+}
+.imgsmall {
+
+}
+.infosmall3 {
+
+}
+.infobig {
+    
+}
 
 
 /* ==========================================================================
