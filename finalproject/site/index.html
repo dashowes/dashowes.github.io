@@ -9,9 +9,11 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-
+        <!-- GOOGLE FONTS -->
+        <link href='https://fonts.googleapis.com/css?family=Contrail+One|Passion+One|Monoton' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.6.1/less.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -28,30 +30,32 @@
         }(document, 'script', 'facebook-jssdk'));</script>
     <div class="page">
 
-        <div class="homecontainer">
-            <div class="mainlogo">In The Van</div>
+        <div class="homecontainer clearfix">
+            <div class="mainlogo">
+                <h1>InTheVan</h1>
+            </div>
             <div class="imgbig"></div>
-            <div class="btncontainer">
-                <div class="loginbtn">Log In</div>
-                <div class="signupbtn">Sign Up</div>
+            <div class="btncontainer clearfix">
+                <div class="loginbtn"><h2>Log In</h2></div>
+                <div class="signupbtn"><h2>Sign Up</h2></div>
             </div>
 
-            <div class="logincontainer">
+            <div class="logincontainer clearfix">
                 <input class="login" placeholder="Email"></input>
                 <input class="login" id="login-pwd" placeholder="Password"></input>
-                <div class="submitbtn">Submit</div>
+                <div class="submitbtn"><h3>Submit</h3></div>
                 <!--FACEBOOK LOGIN-->
                 <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
             </div>
 
-            <div class="user-type-container">
-                <div class="usertypebtn" id="musician">Musician</div>
-                <div class="usertypebtn" id="band">Band</div>
+            <div class="user-type-container clearfix">
+                <div class="usertypebtn" id="musician"><h2>Musician</h2></div>
+                <div class="usertypebtn" id="band"><h2>Band</h2></div>
             </div>
 
-            <div class="musiciancontainer">
-                <div class="user-column-container">
-                    <div class="column1">
+            <div class="musiciancontainer clearfix">
+                <div class="user-column-container clearfix">
+                    <div class="column1 clearfix">
                         <input class="signuptextsm" placeholder="First Name"></input>
                         <input class="signuptextsm" placeholder="City"></input>
                         <input class="signuptextsm" placeholder="Age"></input>
@@ -61,7 +65,7 @@
                         <div class="dropdown">Vehicle</div>
                         <div class="dropdown">Practice Space?</div>
                     </div>
-                    <div class="column2">
+                    <div class="column2 clearfix">
                         <input class="signuptextsm" placeholder="Last Name"></input>
                         <div class="dropdown">State</div>
                         <div class="dropdown">Primary Instrument</div>
@@ -74,9 +78,9 @@
                 </div>
             </div>
 
-            <div class="bandcontainer">
-                <div class="user-column-container">
-                    <div class="column1">
+            <div class="bandcontainer clearfix">
+                <div class="user-column-container clearfix">
+                    <div class="column1 clearfix">
                         <input class="signuptextsm" placeholder="Band Name"></input>
                         <div class="dropdown">State</div>
                         <div class="dropdown">Genre 2</div>
@@ -84,7 +88,7 @@
                         <div class="dropdown">Preferred Work Schedule</div>
                         <input class="signuptextsm" placeholder="Preferred Age Range"></input>
                     </div>
-                    <div class="column2">
+                    <div class="column2 clearfix">
                         <input class="signuptextsm" placeholder="City"></input>
                         <div class="dropdown">Genre 1</div>
                         <div class="dropdown">Genre 3</div>
@@ -95,7 +99,7 @@
                 </div>
             </div>
 
-            <div class="signup-bottom-container">
+            <div class="signup-bottom-container clearfix">
                     <input class="signuptextlg" placeholder="Briefly describe your gear."></input>
                     <input class="signuptextlg" placeholder="Any extra notes?"></input>
                     <input class="signuptextmed" placeholder="Email"></input>
