@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: #242423;
     font-size: 16px;
     line-height: 1.4;
     box-sizing: border-box
@@ -149,12 +149,14 @@ p:last-child{
 /* HOME VIEW */
 
 .page {
+    background-color: #e8eddf;
     padding: 20px;
     max-width: 960px;
     margin: 0 auto;
 }
 
 .homecontainer {
+    background-color: #cfdbd5;
     text-align: center;
 
 }
