@@ -20,40 +20,44 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+
     <div class="page">
 
-        <div class="homecontainer clearfix">
+        <!--TOP SECTION OF PAGE-->
+        <div class="homecontainer-north clearfix">
             <div class="mainlogo">
                 <h1>seeking</h1>
             </div>
-            <div class="imgbig"></div>
+            <img class="imgbig" src="img/seeking.png"></img>
+        </div>
+
+        <!--BOTTOM SECTION OF PAGE-->
+        <div class="homecontainer-south clearfix">
+            <!--LOGIN/SIGNUP BUTTONS-->
             <div class="btncontainer clearfix">
                 <div class="loginbtn"><h2>Log In</h2></div>
                 <div class="signupbtn"><h2>Sign Up</h2></div>
             </div>
-
+            
+            <!--LOGIN FORM-->
             <div class="logincontainer clearfix">
+                <div class="login-signup-header"><h3>Log in</h3></div>
                 <input class="login" placeholder="Email"></input>
                 <input class="login" id="login-pwd" placeholder="Password"></input>
                 <div class="submitbtn"><h3>Submit</h3></div>
-                <!--FACEBOOK LOGIN-->
-                <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
             </div>
 
+            <!--USER TYPE SELECT-->
             <div class="user-type-container clearfix">
-                <div class="usertypebtn" id="musician"><h2>Musician</h2></div>
-                <div class="usertypebtn" id="band"><h2>Band</h2></div>
+                <div class="login-signup-header"><h3>Are you...</h3></div>
+                <div class="usertypebtn" id="musician"><h2>Musician seeking Band</h2></div>
+                <h3>or</h3>
+                <div class="usertypebtn" id="band"><h2>Band seeking Musician</h2></div>
             </div>
-
+            
+            <!--MUSICIAN SIGNUP-->
             <div class="musiciancontainer clearfix">
+                <div class="login-signup-header"><h3>Tell us about yourself</h3></div>
                 <div class="user-column-container clearfix">
                     <div class="column1 clearfix">
                         <input class="signuptextsm" placeholder="First Name"></input>
@@ -78,7 +82,9 @@
                 </div>
             </div>
 
+            <!--BAND SIGNUP-->
             <div class="bandcontainer clearfix">
+                <div class="login-signup-header"><h3>Tell us about your band</h3></div>
                 <div class="user-column-container clearfix">
                     <div class="column1 clearfix">
                         <input class="signuptextsm" placeholder="Band Name"></input>
@@ -88,6 +94,7 @@
                         <div class="dropdown">Preferred Work Schedule</div>
                         <input class="signuptextsm" placeholder="Preferred Age Range"></input>
                     </div>
+
                     <div class="column2 clearfix">
                         <input class="signuptextsm" placeholder="City"></input>
                         <div class="dropdown">Genre 1</div>
@@ -98,20 +105,19 @@
                     </div>
                 </div>
             </div>
-
+            
+            <!--LAST PART OF SIGNUP-->
             <div class="signup-bottom-container clearfix">
-                    <input class="signuptextlg" placeholder="Briefly describe your gear."></input>
-                    <input class="signuptextlg" placeholder="Any extra notes?"></input>
-                    <input class="signuptextmed" placeholder="Email"></input>
-                    <input class="signuptextmed" id="signup-pwd"placeholder="Password"></input>
-                    <input class="signuptextmed" id="signup-pwd-conf" placeholder="Password Confirmation"></input>
-                    <!--Photo Upload-->
-                    <!--Soundcloud-->
+                <input class="signuptextlg" placeholder="Briefly describe your gear."></input>
+                <input class="signuptextlg" placeholder="Any extra notes?"></input>
+                <input class="signuptextmed" placeholder="Email"></input>
+                <input class="signuptextmed" id="signup-pwd"placeholder="Password"></input>
+                <input class="signuptextmed" id="signup-pwd-conf" placeholder="Password Confirmation"></input>
+                <!--Photo Upload-->
+                <!--Soundcloud-->
             </div>
         </div>
     </div>
-
-
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

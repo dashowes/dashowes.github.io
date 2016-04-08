@@ -14,7 +14,8 @@ html {
     color: #242423;
     font-size: 16px;
     line-height: 1.4;
-    box-sizing: border-box
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
 }
 *,
 *:before,
@@ -146,162 +147,168 @@ p:last-child{
     margin-bottom: 0;
 }
 
-/* HOME VIEW */
+/* MOBILE LAYOUT*/
+@media only screen and (min-width: 480px) {
 
-.page {
-    background-color: #e8eddf;
-    padding: 20px;
-    max-width: 960px;
-    margin: 0 auto;
+    /* HOME VIEW */
+    .page {
+        padding: 20px;
+        max-width: 940px;
+        margin: 0 auto;
+    }
+
+    .homecontainer-north {
+        width: 100%;
+        height: 75%;
+        background-color: black;
+        text-align: center;
+
+    }
+    .mainlogo {
+        text-align: center;
+    }
+    .imgbig {
+
+    }
+
+    .homecontainer-south {
+        width: 100%;
+        height: 25%;
+        background-color: white;
+        text-align: center;
+    }
+    .btncontainer {
+        width: 33.33%;
+        position: relative;
+    }
+    .loginbtn {
+        text-align: center;
+        float: left;
+    }
+    .signupbtn {
+        text-align: center;
+        float: right;
+
+    }
+
+
+    /* LOGIN MENU DROPS DOWN ON CLICK OF .loginbtn */
+    .login-signup-header {
+
+    }
+    .logincontainer {
+        width: 33.33%;
+        text-align: center;
+    }
+    .login {
+
+    }
+    #login-pwd {
+
+    }
+    .submitbtn {
+        text-align: center;
+    }
+
+
+    /* USER TYPE MENU DROPS DOWN ON CLICK OF .signupbtn */
+    .user-type-container {
+        width: 33.33%;
+    }
+
+    .usertypebtn {
+
+    }
+
+    #musician {
+        text-align: center;
+        float: left;
+    }
+
+    #band {
+        text-align: center;
+        float: right;
+    }
+
+
+    /* MUSICIAN SIGNUP FORM DROPS DOWN ON CLICK OF #musician */
+    .musiciancontainer {
+
+    }
+
+    .user-column-container {
+
+    }
+    .column1 {
+        float: left;
+        width: 50%;
+    }
+    .signuptextsm {
+
+    }
+    .dropdown {
+
+    }
+
+    .column2 {
+        float: right;
+        width: 50%;
+    }
+
+
+    /* BAND SIGNUP FORM DROPS DOWN ON CLICK OF #band */
+    .bandcontainer {
+
+    }
+
+
+    /* WIDER CONTAINER OF LARGER TEXT FIELDS DROPS DOWN ON CLICK OF ANY .usertypebtn */
+    .signup-bottom-container {
+
+    }
+    .signuptextlg {
+
+    }
+    .signuptextmed {
+
+    }
+    #signup-pwd {
+
+    }
+    #signup-pwd-conf {
+
+    }
+
+
+    /* BROWSE VIEW */
+
+    .browsecontainer {
+
+    }
+    .browse-column1 {
+
+    }
+    .infosmall1 {
+
+    }
+    .infosmall2 {
+
+    }
+
+    .browse-column2 {
+
+    }
+    .imgsmall {
+
+    }
+    .infosmall3 {
+
+    }
+    .infobig {
+        
+    }
+
 }
-
-.homecontainer {
-    background-color: #cfdbd5;
-    text-align: center;
-
-}
-
-.mainlogo {
-    text-align: center;
-}
-
-.imgbig {
-
-}
-
-.btncontainer {
-    width: 33.33%;
-    position: relative;
-}
-.loginbtn {
-    text-align: center;
-    float: left;
-}
-.signupbtn {
-    text-align: center;
-    float: right;
-
-}
-
-
-/* LOGIN MENU DROPS DOWN ON CLICK OF .loginbtn */
-
-.logincontainer {
-    width: 33.33%;
-    text-align: center;
-}
-.login {
-
-}
-#login-pwd {
-
-}
-.submitbtn {
-    text-align: center;
-}
-
-
-/* USER TYPE MENU DROPS DOWN ON CLICK OF .signupbtn */
-
-.user-type-container {
-    width: 33.33%;
-}
-
-.usertypebtn {
-
-}
-
-#musician {
-    text-align: center;
-    float: left;
-}
-
-#band {
-    text-align: center;
-    float: right;
-}
-
-
-/* MUSICIAN SIGNUP FORM DROPS DOWN ON CLICK OF #musician */
-
-.musiciancontainer {
-
-}
-
-.user-column-container {
-
-}
-.column1 {
-    float: left;
-    width: 50%;
-}
-.signuptextsm {
-
-}
-.dropdown {
-
-}
-
-.column2 {
-    float: right;
-    width: 50%;
-}
-
-
-/* BAND SIGNUP FORM DROPS DOWN ON CLICK OF #band */
-
-.bandcontainer {
-
-}
-
-
-/* WIDER CONTAINER OF LARGER TEXT FIELDS DROPS DOWN ON CLICK OF ANY .usertypebtn */
-
-.signup-bottom-container {
-
-}
-.signuptextlg {
-
-}
-.signuptextmed {
-
-}
-#signup-pwd {
-
-}
-#signup-pwd-conf {
-
-}
-
-
-/* BROWSE VIEW */
-
-.browsecontainer {
-
-}
-.browse-column1 {
-
-}
-.infosmall1 {
-
-}
-.infosmall2 {
-
-}
-
-.browse-column2 {
-
-}
-.imgsmall {
-
-}
-.infosmall3 {
-
-}
-.infobig {
-    
-}
-
 
 /* ==========================================================================
    Helper classes
