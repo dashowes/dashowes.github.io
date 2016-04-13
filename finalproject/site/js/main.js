@@ -1,2 +1,2 @@
-$('.logincontainer, .user-type-container, .musiciancontainer, .bandcontainer, .signup-bottom-container').hide();
+// $('.logincontainer, .user-type-container, .musiciancontainer, .bandcontainer, .signup-bottom-container').hide();
 
