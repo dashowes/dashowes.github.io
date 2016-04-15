@@ -1,2 +1,5 @@
-// $('.logincontainer, .user-type-container, .musiciancontainer, .bandcontainer, .signup-bottom-container').hide();
+// $('.user-type-container').hide();
 
+// $('.signupbtn').click(function() {
+// 	$('.user-type-container').fadeIn();
+// });
