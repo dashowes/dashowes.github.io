@@ -5,6 +5,7 @@ $darkGray: #908d8c;
 $lightGray: #d3d3d3;
 $seafoam: #33c0d4;
 $lightGreen: #2ab01b;
+$soundCloud: #ff960e;
 
 
 /*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
@@ -468,10 +469,10 @@ p:last-child{
             text-transform: uppercase;
             margin: 0;
         }
-        h4 {
-            color: $lightGreen;
-            margin: 7px 0 7px 0;
-        }
+    }
+    .matchblurb {
+        color: $lightGreen;
+        margin: 7px 0 7px 0;
     }
     .viewprofile {
         background-color: $seafoam;
@@ -499,32 +500,90 @@ p:last-child{
     /* PROFILE VIEW */
 
     .profilecontainer {
-
+        background-color: $seafoam;
+        width: 100%;
+        height: 390px;
     }
-    .profile-column1 {
-
+    .profile-column {
+        width: 50%;
+        padding: 7px;
+        float: left;
     }
-    .infosmall1 {
-
+    .profile-img-container {
+        opacity: .95;
+        width: 100%;
+        max-width: 100%;
+        padding: 7px;
+        background-color: white;
+        text-align: center;
+        margin: 0;
+        height: 135px;
+        box-shadow: 0 3px 3px 0 $darkGray;
+        img {
+            opacity: .95;
+            max-height: 100%;
+            max-width: 100%;
+            margin: 0;
+        }
     }
-    .infosmall2 {
-
+    .infosmall {
+        opacity: .95;
+        background-color: white;
+        box-shadow: 0 3px 3px 0 $darkGray;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        h2 {
+            margin: 7px 0 0 7px;
+            color: black;
+            font-size: 1.65rem;
+        }
+        h3 {
+            color: $darkGray;
+            margin: 0;
+            font-size: 1.15rem;
+        }
+        .matchblurb {
+            margin: 0;
+            font-size: .85rem;
+        }
+        ul {
+            text-align: right;
+            li {
+                list-style: none;
+                font-size: 1.11rem;
+                
+            }
+        }
     }
 
-    .profile-column2 {
-
-    }
-    .imgsmall {
-
-    }
-    .infosmall3 {
-
-    }
     .infobig {
         
     }
+    .backtobrowse {
+        background-color: $lightGray;
+        width: 100%;
+        padding: 1px;
+        text-align: center;
+        margin: 0 0 0 0;
+        h2 {
+            font-family: $font1;
+            color: black;
+        }
+    }
+    .soundcloud {
+        background-color: $soundCloud;
+        width: 100%;
+        padding: 1px;
+        text-align: center;
+        margin: 0 0 0 0;
+        h2 {
+            font-family: $font1;
+            color: white;
+        }
+    }
 
-}
+
 
 
 /* ==========================================================================
@@ -695,4 +754,5 @@ p:last-child{
     h3 {
         page-break-after: avoid;
     }
+}
 }
