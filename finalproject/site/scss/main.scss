@@ -3,6 +3,7 @@ $font1: 'Open Sans', Helvetica, Arial, sans-serif;
 $font2: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 $darkGray: #908d8c;
 $lightGray: #d3d3d3;
+$lighterGray: #e6e6e6;
 $seafoam: #33c0d4;
 $lightGreen: #2ab01b;
 $soundCloud: #ff960e;
@@ -402,14 +403,11 @@ p:last-child{
         
     }
 
-
     /* BAND SIGNUP FORM DROPS DOWN ON CLICK OF #band */
     .bandcontainer {
 
     }
 
-
-    /* WIDER CONTAINER OF LARGER TEXT FIELDS DROPS DOWN ON CLICK OF ANY .usertypebtn */
     .signup-bottom-container {
 
     }
@@ -498,19 +496,18 @@ p:last-child{
     }
 
     /* PROFILE VIEW */
-
     .profilecontainer {
         background-color: $seafoam;
         width: 100%;
-        height: 390px;
+        height: 265px;
     }
     .profile-column {
         width: 50%;
         padding: 7px;
+        margin: 0;
         float: left;
     }
     .profile-img-container {
-        opacity: .95;
         width: 100%;
         max-width: 100%;
         padding: 7px;
@@ -527,7 +524,6 @@ p:last-child{
         }
     }
     .infosmall {
-        opacity: .95;
         background-color: white;
         box-shadow: 0 3px 3px 0 $darkGray;
         margin: 0;
@@ -547,18 +543,51 @@ p:last-child{
             margin: 0;
             font-size: .85rem;
         }
-        ul {
-            text-align: right;
+        .profileinfo {
+            margin: 0;
+            text-align: left;
+            padding: 5.5px;
             li {
+                color: $darkGray;
                 list-style: none;
+                margin: 0;
                 font-size: 1.11rem;
-                
+                font-family: $font2;
+                text-transform: uppercase;
+            }
+        }
+        .profileinfo2 {
+            margin: 7px 0 0 0;
+            text-align: left;
+            padding: 5.5px;
+            h4 {
+                font-family: $font1;
+                font-size: .79rem;
+                margin: 0;
+                text-transform: uppercase;
+            }
+            li {
+                font-family: $font2;
+                color: $darkGray;
+                font-size: .69rem;
+                margin: 0;
             }
         }
     }
 
     .infobig {
-        
+        background-color: $lighterGray;
+        margin: 0;
+        width: 100%;
+        height: 125px;
+        text-align: center;
+        p {
+            font-family: $font1;
+            color: black;
+            font-size: .75rem;
+            padding: 7px;
+            text-align: justify;
+        }
     }
     .backtobrowse {
         background-color: $lightGray;
