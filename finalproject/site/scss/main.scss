@@ -5,7 +5,8 @@ $darkGray: #908d8c;
 $lightGray: #d3d3d3;
 $lighterGray: #e6e6e6;
 $seafoam: #33c0d4;
-$lightGreen: #2ab01b;
+$lightGreen: #1ed761;
+$lightRed: #f15a24;
 $soundCloud: #ff960e;
 
 
@@ -468,9 +469,20 @@ p:last-child{
             margin: 0;
         }
     }
+    .noped {
+        background-color: $lightRed;
+        transition: background-color 0.5s ease-in-out 0s;
+    }
+    .liked {
+        background-color: $lightGreen;
+        transition: background-color 0.5s ease-in-out 0s;
+    }
     .matchblurb {
         color: $lightGreen;
         margin: 7px 0 7px 0;
+    }
+    .liked-noped {
+        color: white;
     }
     .viewprofile {
         background-color: $seafoam;

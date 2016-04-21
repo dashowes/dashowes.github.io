@@ -1,5 +1,9 @@
-// $('.user-type-container').hide();
-
-// $('.signupbtn').click(function() {
-// 	$('.user-type-container').fadeIn();
-// });
+// BROWSING FUNCTIONALITY
+$('#stop').click(function() {
+	$('.browsevitals').addClass('noped');
+	$('.matchblurb').addClass('liked-noped');
+});
+$('#play').click(function() {
+	$('.browsevitals').addClass('liked');
+	$('.matchblurb').addClass('liked-noped');
+});
