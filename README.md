@@ -1,2 +1,0 @@
-# jim.howes
-Jim Howes
