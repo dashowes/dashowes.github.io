@@ -181,10 +181,9 @@ p:last-child{
         max-width: 940px;
         margin: 0 auto;
     }
-
     .homecontainer-north {
         width: 100%;
-        height: 500px;
+        height: 505px;
         background-color: $seafoam;
         text-align: center;
 
@@ -374,7 +373,7 @@ p:last-child{
         text-align: center;
     }
     
-    .musician-btn {
+    .usertypebtn {
         text-align: center;
         width: 75%;
         background-color: white;
@@ -382,14 +381,9 @@ p:last-child{
         left: 45px;
         box-shadow: 0 3px 3px 0 $darkGray;
     }
-
-    .band-btn {
-        text-align: center;
-        width: 75%;
-        background-color: white;
-        position: relative;
-        left: 45px;
-        box-shadow: 0 3px 3px 0 $darkGray;
+    .smashed {
+        background-color: $lightGray;
+        box-shadow: none;
     }
 
     /* MUSICIAN SIGNUP FORM */
@@ -477,12 +471,17 @@ p:last-child{
         background-color: $lightGreen;
         transition: background-color 0.5s ease-in-out 0s;
     }
-    .matchblurb {
-        color: $lightGreen;
+    .matchblurbgood {
         margin: 7px 0 7px 0;
+        color: $lightGreen;
+    }
+    .matchblurbbad {
+        margin: 7px 0 7px 0;
+        color: $lightRed;
     }
     .liked-noped {
         color: white;
+        transition: none;
     }
     .viewprofile {
         background-color: $seafoam;
