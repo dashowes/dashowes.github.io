@@ -13,7 +13,6 @@
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300|Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
@@ -22,23 +21,28 @@
     <![endif]-->
 
 <div class="page">
-
-    <!--TOP SECTION OF PAGE-->
-    <div class="homecontainer-north clearfix">
-        <div class="mainlogo">
-            <img src="img/testlogo.svg"></img>
+        
+        <!--LOGIN FORM-->
+    <div class="logincontainer clearfix">
+         <div class="login-logo-container">
+            <img class="imgmed" src="img/Slogomark.svg"></img>
         </div>
-        <img class="imgbig" src="img/Slogomark.svg"></img>
-    </div>
-
-    <!--BOTTOM SECTION OF PAGE-->
-    <div class="homecontainer-south clearfix">
-        <!--LOGIN/SIGNUP BUTTONS-->
-        <div class="btncontainer clearfix">
-            <a href="login.html"><div class="btn loginbtn"><h2>Log In</h2></div></a>
-            <a href="userselect.html"><div class="btn signupbtn"><h2>Sign Up</h2></div></a>
+        <div class="form">
+        <!--<form action>-->    
+            <ul class="form-column loginform-column">
+            <li>
+                <label>Email Address:</label>
+                <input type="text" placeholder="Email" name="email" id="email" required="">
+            </li>
+            <li>
+                <label>Password:</label>
+                <input type="password" placeholder="Password" name="password" id="password">
+            </li>
+            <li id="pwdretrieve">Forgot password?</li>
+            </ul>
         </div>
     </div>
+    <a href="browseview-musician.html"><div class="submitbtn"><h2>Log in</h2></div></a>
 </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

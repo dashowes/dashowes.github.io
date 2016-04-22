@@ -1,0 +1,798 @@
+@import "normalize";
+$font1: 'Open Sans', Helvetica, Arial, sans-serif;
+$font2: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+$darkGray: #908d8c;
+$lightGray: #d3d3d3;
+$lighterGray: #e6e6e6;
+$seafoam: #33c0d4;
+$lightGreen: #1ed761;
+$lightRed: #f15a24;
+$soundCloud: #ff960e;
+
+
+/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #242423;
+    font-size: 16px;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+li {
+    list-style: none;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+   /* REMOVE THIS */
+    /*border: 1px solid #ccc;*/
+}
+.clearfix:after {
+    display: block;
+    height: 0;
+    clear: both;
+    line-height: 0;
+    content: ".";
+
+    visibility: hidden;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* TYPOGRAPHY */
+h1 {
+    font-family: $font1;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    font-size: 2.25rem;
+    color: black;
+}
+h2 {
+    font-family: $font1;
+    font-weight: 300;
+    margin: 10px 0 10px 0;
+    font-size: 1.75rem;
+    color: $darkGray;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: $font1;
+    font-weight: 200;
+    margin: 0 0 10px 0;
+    font-size: 1.25rem;
+}
+h4,
+h5,
+h6 {
+    font-family: $font2;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+}
+p{
+    font-family: $font2;
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 22px;
+    margin: 0 0 10px 0;
+}
+p:last-child{
+    margin-bottom: 0;
+}
+
+/* MOBILE LAYOUT*/
+@media only screen and (max-width: 479px) {
+
+    /* HOME VIEW */
+    .page {
+        max-width: 940px;
+        margin: 0 auto;
+    }
+    .homecontainer-north {
+        width: 100%;
+        height: 505px;
+        background-color: $seafoam;
+        text-align: center;
+
+    }
+    .mainlogo {
+        text-align: center;
+        width: 100%;
+        padding: 15px;
+        background-color: $darkGray;
+        img {
+            width: 95%;
+        }
+    }
+    .imgbig {
+        height: 250px;
+        position: relative;
+        top: 65px;
+    }
+    /*ADD HOVER/ACTIVE EFFECTS FOR .imgbig*/
+
+    .homecontainer-south {
+        width: 100%;
+        height: 100px;
+        background-color: white;
+    }
+    .btncontainer {
+        width: 100%;
+    }
+    .btn:active {
+        background-color: $darkGray;
+        color: white;
+        border: 3px solid white;
+    }
+    .loginbtn {
+        text-align: center;
+        float: left;
+        width: 50%;
+        border-right: .5px solid $darkGray;
+    }
+    .signupbtn {
+        text-align: center;
+        float: left;
+        width: 50%;
+    }
+
+    /* LOGIN PAGE/SIGNUP PAGE */
+    .login-logo-container {
+        text-align: center;
+    }
+    .imgmed {
+        height: 175px;
+        position: relative;
+        top: 55px;
+        text-align: center;
+    }
+    .logincontainer {
+        width: 100%;
+        height: 500px;
+        background-color: $seafoam; 
+    }
+
+    .form {
+        position: relative;
+        top: 120px;
+        left: 35px;
+        width: 600px;
+        overflow: hidden;
+        .signupform {
+            background-color: $seafoam;
+            width: 50%;
+            position: relative;
+            top: 40px;
+        }
+    }
+    .form-column {
+        width: 50%;
+        margin: 0;
+        float: left;
+        padding: 0 10px;
+        .loginform-column {
+            width: 100%;
+        }
+        li {
+            margin: 0 0 10px 0;
+            padding: 0;
+            display: block;
+            position: relative;
+            .parsley-errors-list {
+                position: absolute;
+                top: 46px;
+                left: 0;
+                z-index: 1;
+                background: #FD8A71;
+                color: #ffffff;
+                padding: 0;
+                margin: 0;
+                border-radius: 10px;
+                width: 100%;
+                li {
+                    margin: 0;
+                    padding: 10px;
+                }
+            }
+        }
+        #pwdretrieve {
+            font-family: $font2;
+            font-weight: 400;
+            float: left;
+            color: $lightGray;
+            text-transform: uppercase;
+            font-size: .75rem;
+        }
+    }
+
+    .form label{
+      display: none;
+    }
+    .form input[type=text],
+    .form textarea,
+    .form input[type=submit],
+    .form input[type=password] {
+      height: 50px;
+    }
+    .form input[type=text],
+    .form input[type=password],
+    .form textarea {
+      background: white;
+      font-family: $font2;
+      border: 0;
+      padding: 6px 12px;
+      color: black;
+      width: 100%;
+      border-radius: 0;
+    }
+    .form input[type=text]:focus,
+    .form textarea:focus,
+    .form input[type=submit]{
+      outline: none;
+    }
+    .form textarea{
+      resize: none;
+      height: 110px;
+      display: block;
+    }
+    .form input[type=submit]{
+      background: #5DAD7F;
+      border: 0;
+      padding: 10px 20px;
+      color: #ffffff;
+      border-radius: 10px;
+      height: 50px;
+      width: 100%;
+    }
+    .submitbtn {
+        text-align: center;
+        background-color: white;
+        color: $darkGray;
+    }
+
+
+    /* USER TYPE MENU DROPS DOWN ON CLICK OF .signupbtn */
+    .login-signup-header {
+        background-color: $darkGray;
+        width: 100%;
+        padding: 3px;
+        height: 75px;
+        text-align: center;
+    }
+    .imgsmall1 {
+        height: 50px;
+        margin: 10px 0 7px 0;
+    }
+    .user-type-container {
+        height: 600px;
+        width: 100%;
+        background-color: $seafoam;
+        text-align: center;
+        h3 {
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+
+    .usertypebtn-container {
+        position: relative;
+        top: 120px;
+        text-align: center;
+    }
+    
+    .usertypebtn {
+        text-align: center;
+        width: 75%;
+        background-color: white;
+        position: relative;
+        left: 45px;
+        box-shadow: 0 3px 3px 0 $darkGray;
+    }
+    .smashed {
+        background-color: $lightGray;
+        box-shadow: none;
+    }
+
+    /* MUSICIAN SIGNUP FORM */
+    .musiciancontainer {
+        height: 600px;
+        width: 100%;
+        background-color: $seafoam;
+        text-align: center;
+    }
+
+    .dropdown {
+        
+    }
+
+    /* BAND SIGNUP FORM DROPS DOWN ON CLICK OF #band */
+    .bandcontainer {
+
+    }
+
+    .signup-bottom-container {
+
+    }
+    .signuptextlg {
+
+    }
+    .signuptextmed {
+
+    }
+    #signup-pwd {
+
+    }
+    #signup-pwd-conf {
+
+    }
+
+    /* BROWSE VIEW */
+    .browsecontainer {
+        width: 100%;
+        margin: 0;
+    }
+    .browselogo {
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        background-color: $darkGray;
+        img {
+            height: 35px;
+            margin: 7px 0 0 0;
+        }
+    }
+    .browse-img-container {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        background-color: $lightGray;
+        height: 275px;
+        overflow: hidden;
+        margin: 0;
+        img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .browsevitals {
+        width: 100%; 
+        background-color: white;
+        padding: 7px;
+        margin: 0;
+        h1 {
+            font-family: $font1;
+            margin: 0;
+        }
+        h3 {
+            font-weight: 400;
+            text-transform: uppercase;
+            margin: 0;
+        }
+    }
+    .noped {
+        background-color: $lightRed;
+        transition: background-color 0.5s ease-in-out 0s;
+    }
+    .liked {
+        background-color: $lightGreen;
+        transition: background-color 0.5s ease-in-out 0s;
+    }
+    .matchblurbgood {
+        margin: 7px 0 7px 0;
+        color: $lightGreen;
+    }
+    .matchblurbbad {
+        margin: 7px 0 7px 0;
+        color: $lightRed;
+    }
+    .liked-noped {
+        color: white;
+        transition: none;
+    }
+    .viewprofile {
+        background-color: $seafoam;
+        width: 100%;
+        padding: 1px;
+        text-align: center;
+        margin: 0 0 0 0;
+        h2 {
+            font-family: $font1;
+            color: white;
+        }
+    }
+    .browsefooter {
+        background-color: $darkGray;
+        width: 100%;
+        padding: 1px;
+        text-align: center;
+        margin: 0 0 0 0;
+    }
+    .browseicon {
+        height: 45px;
+        padding: 5px;
+    }
+
+    /* PROFILE VIEW */
+    .profilecontainer {
+        background-color: $seafoam;
+        width: 100%;
+        height: 265px;
+    }
+    .profile-column {
+        width: 50%;
+        padding: 7px;
+        margin: 0;
+        float: left;
+    }
+    .profile-img-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 7px;
+        background-color: white;
+        text-align: center;
+        margin: 0;
+        height: 135px;
+        box-shadow: 0 3px 3px 0 $darkGray;
+        img {
+            opacity: .95;
+            max-height: 100%;
+            max-width: 100%;
+            margin: 0;
+        }
+    }
+    .infosmall {
+        background-color: white;
+        box-shadow: 0 3px 3px 0 $darkGray;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        h2 {
+            margin: 7px 0 0 7px;
+            color: black;
+            font-size: 1.65rem;
+        }
+        h3 {
+            color: $darkGray;
+            margin: 0;
+            font-size: 1.15rem;
+        }
+        .matchblurb {
+            margin: 0;
+            font-size: .85rem;
+        }
+        .profileinfo {
+            margin: 0;
+            text-align: left;
+            padding: 5.5px;
+            li {
+                color: $darkGray;
+                list-style: none;
+                margin: 0;
+                font-size: 1.11rem;
+                font-family: $font2;
+                text-transform: uppercase;
+            }
+        }
+        .profileinfo2 {
+            margin: 7px 0 0 0;
+            text-align: left;
+            padding: 5.5px;
+            h4 {
+                font-family: $font1;
+                font-size: .79rem;
+                margin: 0;
+                text-transform: uppercase;
+            }
+            li {
+                font-family: $font2;
+                color: $darkGray;
+                font-size: .69rem;
+                margin: 0;
+            }
+        }
+    }
+
+    .infobig {
+        background-color: $lighterGray;
+        margin: 0;
+        width: 100%;
+        height: 125px;
+        text-align: center;
+        p {
+            font-family: $font1;
+            color: black;
+            font-size: .75rem;
+            padding: 7px;
+            text-align: justify;
+        }
+    }
+    .backtobrowse {
+        background-color: $lightGray;
+        width: 100%;
+        padding: 1px;
+        text-align: center;
+        margin: 0 0 0 0;
+        h2 {
+            font-family: $font1;
+            color: black;
+        }
+    }
+    .soundcloud {
+        background-color: $soundCloud;
+        width: 100%;
+        padding: 1px;
+        text-align: center;
+        margin: 0 0 0 0;
+        h2 {
+            font-family: $font1;
+            color: white;
+        }
+    }
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+}
